@@ -1,0 +1,168 @@
+<html>
+<head>
+    
+   
+<meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+<title>Adrenaline</title>
+</head>
+    
+<style>
+    #secondpage{
+         background-image: url("img/baack4.jpg");
+        background-repeat: no-repeat;
+        background-size: 1400px 1100px;
+        
+    }
+        
+    
+    #h12{
+        
+        font-family: monospace,sans-serif,cursive,fantasy;
+        font-size:75px;
+        font-style:normal;
+        font-weight: 400;
+        color:darkred;
+        
+    }
+    #h13{
+        font-family: monospace,sans-serif,cursive,fantasy;
+        font-size:70px;
+        font-style:normal;
+        font font-weight: 400;
+        color:aqua;
+    }
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color:crimson;
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,#e94498,#b81568);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;	
+}
+.change-bg{
+	width: 550px;
+	height: 540px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
+    
+</style>
+<body>
+    <div id="firstpage">
+    <center>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <b><h1 id="h12">ADRENALINE</h1></b></center>
+    </div>
+    
+<div id="secondpage" style="display: none">
+        <br>
+    <div id="menu-bar">
+			<div id="menu" onclick="onClickMenu()">
+				<div id="bar1" class="bar"></div>
+				<div id="bar2" class="bar"></div>
+				<div id="bar3" class="bar"></div>
+			</div>
+			<ul class="nav" id="nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="https://www.adrenalinefmmc.com/">About</a></li>
+				<li><a href="develop.html">Developers</a></li>
+			</ul>
+		</div>
+		<div class="menu-bg" id="menu-bg"></div>
+  
+
+<center>
+    <br>
+<br><br><br><br><br>
+<b><h1 id="h13">ADRENALINE</h1></b>
+<br><br><br><br>
+    <a href="register.html" style=" text-decoration: none;font-size:40px;border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border:2px solid red;color:white;border-bottom-width: 2px; font-weight: 400; border-top-width: 2px;">.REGISTER.</a>
+    <br><br><br><br>
+    <a href="events1.html" style=" text-decoration: none;font-size:40px;border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;font-weight: 400;
+        border-top-right-radius: 30px;
+        border:2px solid red;color:white;border-bottom-width: 2px;border-top-width: 2px;">.EVENTS.</a>
+    <br> <br> <br> <br><a href="pronites.html" style=" text-decoration: none;font-size:40px;border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border:2px solid red;color:white;border-bottom-width: 2px; font-weight: 400; border-top-width: 2px;">.PRONITES.</a>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br><br><br><br>
+    </center>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+    
+</body></html>

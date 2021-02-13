@@ -1,0 +1,1170 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <title>Events page</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    h1{
+        color: white;
+        text-align: center;
+    }
+    h1 a{
+        float:left;
+    }
+    d1{
+        color:white;
+    }
+    #csstable th{
+        text-align: center;
+        vertical-align: middle;
+    }
+    .div{
+        background-color:white;
+        background-size:200px 100px;
+        
+    }
+    h3{
+        font-family: monospace;
+    }
+    .eventslist{
+        text-align: center;
+        vertical-align: middle;
+        border-collapse: separate;
+        border-spacing: 10px;
+    }
+    #csstable{
+        border-collapse: collapse;
+    }
+    .stylebutton{
+        background-color: black;
+        border-color: aqua;
+        font-size: 25px;
+        width:95%;
+        color:white;
+    }
+    .container1#firstpage1.active
+    {
+        filter:blur(8px);
+        pointer-events: none;
+        user-select: none;
+    }
+    .container1#secondpage1.active
+    {
+        filter:blur(8px);
+        pointer-events: none;
+        user-select: none;
+    }
+    .container1#thirdpage1.active{
+        
+        filter:blur(8px);
+        pointer-events: none;
+        user-select: none;
+    }
+   
+    .container1#fourthpage1.active
+    {
+        filter:blur(8px);
+        pointer-events: none;
+        user-select: none;
+    }
+    
+
+</style>
+<body>
+
+<div>
+<h1>EVENTS<a href="index.html">
+    <input type="image" src="img/arrow1.png" alt="index.html" width="38" height="38" id="menu"></a></h1>
+</div>
+<div>
+<table  style="width: 451px;" id="csstable">
+<tr><th><input type="button" value="DAY1" class="stylebutton" id="d1"></th>
+    <th><input type="button" value="DAY2" class="stylebutton" id="d2"></th>
+    <th><input type="button" value="DAY3" class="stylebutton" id="d3"></th>
+    <th><input type="button" value="DAY4" class="stylebutton" id="d4"></th>
+    </tr></table></div>
+<div id="firstpage1" class="container1">
+<table class="eventslist" style="width:451px" border="2" bordercolor="cyan" ><br><br>
+<tr><td><div class="div" onclick="toggle1()"><center><img src="img/quiz2.png" width=50% height=76%><br>
+    <h3><b>QUIZ</b></h3>
+    <h5><b>1:00 PM  LH 211</b></h5>
+    <h6><b>Round 1</b></h6></center><br>
+    
+    </div></td>
+    <td><div class="div" onclick="toggle4()"><center><img src="img/mock2.png" width=40% height=41%><br>
+    <h3><b>MOCK PRESS</b></h3>
+    <h5><b>1:00 PM  LH 202,203</b></h5>
+        <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+    
+    
+    
+    <tr><td><div class="div" onclick="toggle7()"><center><img src="img/roadies.jpg" width=40% height=40%><br>
+    <h3><b>ROADIES</b></h3>
+    <h5><b>1:00 PM  LH 004,005</b></h5>
+    <h6><b>Round 1</b></h6></center><br>
+    
+    </div></td>
+    <td><div class="div" onclick="toggle10()"><center><img src="img/robo.png" width=40% height=40%><br>
+    <h3><b>ROBO RACE</b></h3>
+    <h5><b>1:00 PM  Opposite Mainblock</b></h5>
+        <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle12()"><center><img src="img/music1.jpg" width=40% height=43.2%><br>
+    <h3><b>RIFF OFF</b></h3>
+    <h5><b>1:00 PM  Sambhram</b></h5>
+        </center><br></div></td>
+    
+    <td><div class="div" onclick="toggle13()"><center><img src="img/money1.jpg" width=40% height=40%><br>
+    <h3><b>MONEY HEIST</b></h3>
+    <h5><b>1:00 PM  LH 310,312</b></h5>
+        <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle16()"><center><img src="img/bridge2.png" width=40% height=43.2%><br>
+    <h3><b>BRIDGE IT!</b></h3>
+    <h5><b>2:00 PM  NC 11,12</b></h5>
+        <h6><b>Round 1</b></h6>
+        </center><br></div></td>
+    
+        <td><div class="div" onclick="toggle19()"><center><img src="img/video2.jpg" width=40% height=43.2%><br>
+    <h3><b>KALAKAAR</b></h3>
+    <h5><b>1:00 PM  NC 21</b></h5>
+        <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+     <tr><td><div class="div" onclick="toggle22()"><center><img src="img/ads.jpg" width=40% height=43.2%><br>
+    <h3><b>TECH ADS</b></h3>
+    <h5><b>1:00 PM  LH 004,005</b></h5>
+        <h6><b>Round 1</b></h6>
+        </center><br></div></td>
+         
+         <td><div class="div" onclick="toggle25()"><center><img src="img/run2.png" width=40% height=44%><br>
+    <h3><b>BURN AND RUN</b></h3>
+    <h5><b>2:30 PM  NC 22</b></h5>
+        <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+    
+    </table>
+
+</div>
+
+    
+    
+    
+<div id="secondpage1" class="container1" style="display:none;">
+<table class="eventslist" style="width:451px" border="2" bordercolor="cyan" ><br><br>
+<tr><td><div class="div" onclick="toggle28()"><center><img src="img/pray.png" width=50% height=40.4%><br>
+    <h3><b>BHAJAN</b></h3>
+    <h5><b> 9:00 AM  TEMPLE</b></h5></center><br>
+    
+    </div></td>
+    <td><div class="div" onclick="toggle29()"><center><img src="img/electric2.png" width=40% height=40%><br>
+    <h3><b>ELECTRICUIT IT</b></h3>
+    <h5><b>9:00 AM  NC 22</b></h5>
+        <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+    
+    
+    
+    <tr><td><div class="div" onclick="toggle8()"><center><img src="img/roadies.jpg" width=40% height=40%><br>
+    <h3><b>ROADIES</b></h3>
+    <h5><b>9:00 AM  Sadananda Ground</b></h5>
+    <h6><b>Round 2</b></h6></center><br>
+    
+    </div></td>
+        <td><div class="div" onclick="toggle11()"><center><img src="img/robo.png" width=40% height=40%><br>
+    <h3><b>ROBO RACE</b></h3>
+    <h5><b>9:00 AM  Opposite Mainblock</b></h5>
+            <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+    
+    <tr><td><div class="div" onclick="toggle32()"><center><img src="img/hog.jpg" width=40% height=32.7%><br>
+    <h3><b>HOGATHON</b></h3>
+    <h5><b>9:30 AM  Swarna</b></h5>
+        <h6><b>Round 1</b></h6>
+        </center><br></div></td>
+    
+    <td><div class="div" onclick="toggle14()"><center><img src="img/money1.jpg" width=40% height=40%><br>
+    <h3><b>MONEY HEIST</b></h3>
+    <h5><b>9:30 AM  LH 312</b></h5>
+        <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle34()"><center><img src="img/camera4.png" width=40% height=44%><br>
+    <h3><b>SHUTTER UP</b></h3>
+    <h5><b>10:00 AM  LH 104,108</b></h5>
+        <h6><b>Round 1</b></h6>
+        </center><br></div></td>
+         
+         <td><div class="div" onclick="toggle37()"><center><img src="img/wrong.png" width=40% height=44%><br>
+    <h3><b>PROVE US WRONG</b></h3>
+    <h5><b>10:00 AM  NC 12</b></h5>
+        <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle17()"><center><img src="img/bridge2.png" width=40% height=43.2%><br>
+    <h3><b>BRIDGE IT!</b></h3>
+    <h5><b>10:00 AM  NC 11</b></h5>
+        <h6><b>Round 2</b></h6>
+        </center><br></div></td>
+    
+        <td><div class="div" onclick="toggle20()"><center><img src="img/video2.jpg" width=40% height=43.2%><br>
+    <h3><b>KALAKAAR</b></h3>
+    <h5><b>11:00 AM  NC 21</b></h5>
+        <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+     <tr><td><div class="div" onclick="toggle23()"><center><img src="img/ads.jpg" width=40% height=43.2%><br>
+    <h3><b>TECH ADS</b></h3>
+    <h5><b>12:00 PM  LH 004</b></h5>
+        <h6><b>Round 2</b></h6>
+        </center><br></div></td>
+         
+         <td><div class="div" onclick="toggle26()"><center><img src="img/run2.png" width=40% height=44%><br>
+    <h3><b>BURN AND RUN</b></h3>
+    <h5><b>2:30 PM  NC 22</b></h5>
+        <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle40()"><center><img src="img/duet.jpg" width=40% height=40%><br>
+    <h3><b>DUET DANCE</b></h3>
+    <h5><b>3:00 AM  Swarna</b></h5>
+    </center><br>
+    
+    </div></td>
+        <td><div class="div" onclick="toggle41()"><center><img src="img/band5.jpg" width=30% height=40%><br>
+    <h3><b>BATTLE OF BANDS</b></h3>
+    <h5><b>4:00 PM  Sadananda</b></h5>
+            </center><br></div></td></tr>
+    </table>
+
+</div>
+    
+    
+    
+<div id="thirdpage1" class="container1" style="display:none;">
+<table class="eventslist" style="width:451px" border="2" bordercolor="cyan" ><br><br>
+<tr><td><div class="div" onclick="toggle42()"><center><img src="img/dance2.png" width=40% height=42%><br>
+    <h3><b>VIBE</b></h3>
+    <h5><b> 9:00 AM  Swarna</b></h5></center><br>
+    
+    </div></td>
+    <td><div class="div" onclick="toggle30()"><center><img src="img/electric2.png" width=40% height=40%><br>
+    <h3><b>ELECTRICUIT IT</b></h3>
+    <h5><b>9:00 AM  NCL 32</b></h5>
+        <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+    
+    <tr><td><div class="div" onclick="toggle2()"><center><img src="img/quiz2.png" width=50% height=76%><br>
+    <h3><b>QUIZ</b></h3>
+    <h5><b>9:00 AM  Sambhram</b></h5>
+    <h6><b>Round 2</b></h6></center><br>
+    
+    </div></td>
+    <td><div class="div" onclick="toggle5()"><center><img src="img/mock2.png" width=40% height=41%><br>
+    <h3><b>MOCK PRESS</b></h3>
+    <h5><b>10:00 AM  Shambhavi</b></h5>
+        <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle43()"><center><img src="img/talent.jpg" width=40% height=74%><br>
+    <h3><b>TALENT HOUSE</b></h3>
+    <h5><b>11:00 AM  Phalguni</b></h5>
+    <h6><b>Round 1</b></h6></center><br>
+    
+    </div></td>
+        <td><div class="div" onclick="toggle45()"><center><img src="img/code.png" width=40% height=40%><br>
+    <h3><b>CODE STUDIO</b></h3>
+    <h5><b>12:00 PM  ISL 12,13</b></h5>
+            <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle9()"><center><img src="img/roadies.jpg" width=40% height=40%><br>
+    <h3><b>ROADIES</b></h3>
+    <h5><b>12:30 PM  Sambhram</b></h5>
+    <h6><b>Round 3</b></h6></center><br>
+    
+    </div></td>
+        <td><div class="div" onclick="toggle47()"><center><img src="img/chef.jpg" width=40% height=40%><br>
+    <h3><b>MASTERCHEF</b></h3>
+    <h5><b>1:00 PM  NC11</b></h5>
+            <h6><b>Round 1</b></h6></center><br></div></td></tr>
+    
+    
+    <tr><td><div class="div" onclick="toggle33()"><center><img src="img/hog.jpg" width=40% height=32.7%><br>
+    <h3><b>HOGATHON</b></h3>
+    <h5><b>1:30 AM  Swarna</b></h5>
+        <h6><b>Round 2</b></h6>
+        </center><br></div></td>
+    
+    <td><div class="div" onclick="toggle15()"><center><img src="img/money1.jpg" width=40% height=40%><br>
+    <h3><b>MONEY HEIST</b></h3>
+    <h5><b>1:30 PM  LH 312</b></h5>
+        <h6><b>Round 3</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle35()"><center><img src="img/camera4.png" width=40% height=44%><br>
+    <h3><b>SHUTTER UP</b></h3>
+    <h5><b>2:00 PM  LH 104,108</b></h5>
+        <h6><b>Round 2</b></h6>
+        </center><br></div></td>
+         
+         <td><div class="div" onclick="toggle38()"><center><img src="img/wrong.png" width=40% height=44%><br>
+    <h3><b>PROVE US WRONG</b></h3>
+    <h5><b>2:00 PM  NC 12</b></h5>
+        <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle49()"><center><img src="img/ssh2.jpg" width=40% height=43.7%><br>
+    <h3><b>KHAAMOSHH!!</b></h3>
+    <h5><b>2:00 PM  LH 502,503</b></h5>
+        <h6><b>Round 1</b></h6>
+        </center><br></div></td>
+         
+         <td><div class="div" onclick="toggle51()"><center><img src="img/davinci.jpg" width=40% height=55%><br>
+    <h3><b>DAVINCI</b></h3>
+    <h5><b>2:30 PM  LH 004,005</b></h5>
+        </center><br></div></td></tr>
+    
+    
+    <tr><td><div class="div" onclick="toggle18()"><center><img src="img/bridge2.png" width=40% height=43.2%><br>
+    <h3><b>BRIDGE IT!</b></h3>
+    <h5><b>3:00 PM  NC 11</b></h5>
+        <h6><b>Round 3</b></h6>
+        </center><br></div></td>
+    
+        <td><div class="div" onclick="toggle21()"><center><img src="img/video2.jpg" width=40% height=43.2%><br>
+    <h3><b>KALAKAAR</b></h3>
+    <h5><b>3:00 PM  NC 21</b></h5>
+        <h6><b>Round 3</b></h6></center><br></div></td></tr>
+    
+    
+     <tr><td><div class="div" onclick="toggle24()"><center><img src="img/ads.jpg" width=40% height=43.2%><br>
+    <h3><b>TECH ADS</b></h3>
+    <h5><b>3:00 PM  LH 004</b></h5>
+        <h6><b>Round 3</b></h6>
+        </center><br></div></td>
+         
+         <td><div class="div" onclick="toggle27()"><center><img src="img/run2.png" width=40% height=44%><br>
+    <h3><b>BURN AND RUN</b></h3>
+    <h5><b>3:00 PM  NC 22</b></h5>
+        <h6><b>Round 3</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle52()"><center><img src="img/timer.jpg" width=40% height=50%><br>
+    <h3><b>JAM</b></h3>
+    <h5><b>3:00 PM  Sambhram</b></h5>
+    </center><br>
+    
+    </div></td>
+        <td><div class="div" onclick="toggle53()"><center><img src="img/singer.jpg" width=30% height=38%><br>
+    <h3><b>VOCAL TWIST</b></h3>
+    <h5><b>4:00 PM  Shambavi</b></h5>
+            </center><br></div></td></tr>
+    </table>
+
+</div>
+    
+
+<div id="fourthpage1" class="container1" style="display:none;">
+<table class="eventslist" style="width:451px" border="2" bordercolor="cyan" ><br><br>
+<tr><td><div class="div" onclick="toggle54()"><center><img src="img/form.png" width=40% height=93%><br>
+    <h3><b>INTELLECTIUM</b></h3>
+    <h5><b> 9:00 AM  Shambhavi</b></h5></center><br>
+    
+    </div></td>
+    <td><div class="div" onclick="toggle31()"><center><img src="img/electric2.png" width=40% height=40%><br>
+    <h3><b>ELECTRICUIT IT</b></h3>
+    <h5><b>9:00 AM  NCL 32</b></h5>
+        <h6><b>Round 3</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle44()"><center><img src="img/talent.jpg" width=40% height=74%><br>
+    <h3><b>TALENT HOUSE</b></h3>
+    <h5><b>10:00 AM  Phalguni</b></h5>
+    <h6><b>Round 2</b></h6></center><br>
+    
+    </div></td>
+        <td><div class="div" onclick="toggle46()"><center><img src="img/code.png" width=40% height=40%><br>
+    <h3><b>CODE STUDIO</b></h3>
+    <h5><b>10:00 AM  ISL 12,13</b></h5>
+            <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+    
+    <tr><td><div class="div" onclick="toggle3()"><center><img src="img/quiz2.png" width=50% height=76%><br>
+    <h3><b>QUIZ</b></h3>
+    <h5><b>10:30 AM  Sambhram</b></h5>
+    <h6><b>Round 3</b></h6></center><br>
+    
+    </div></td>
+    <td><div class="div" onclick="toggle6()"><center><img src="img/mock2.png" width=40% height=41%><br>
+    <h3><b>MOCK PRESS</b></h3>
+    <h5><b>10:30 AM  Shambhavi</b></h5>
+        <h6><b>Round 3</b></h6></center><br></div></td></tr>
+    
+    
+    
+    <tr><td><div class="div" onclick="toggle55()"><center><img src="img/bike.png" width=40% height=91%><br>
+    <h3><b>SLOW BIKE RACE</b></h3>
+    <h5><b>11:00 AM  Sadananda Ground</b></h5>
+    </center><br>
+    
+    </div></td>
+        <td><div class="div" onclick="toggle48()"><center><img src="img/chef.jpg" width=40% height=40%><br>
+    <h3><b>MASTERCHEF</b></h3>
+    <h5><b>12:00 PM  NC11</b></h5>
+            <h6><b>Round 2</b></h6></center><br></div></td></tr>
+    
+    
+    
+    
+    <tr><td><div class="div" onclick="toggle36()"><center><img src="img/camera4.png" width=40% height=44%><br>
+    <h3><b>SHUTTER UP</b></h3>
+    <h5><b>12:00 PM  LH 104,108</b></h5>
+        <h6><b>Round 3</b></h6>
+        </center><br></div></td>
+         
+         <td><div class="div" onclick="toggle39()"><center><img src="img/wrong.png" width=40% height=44%><br>
+    <h3><b>PROVE US WRONG</b></h3>
+    <h5><b>1:00 PM  NC 12</b></h5>
+        <h6><b>Round 3</b></h6></center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle56()"><center><img src="img/stomp.png" width=40% height=50%><br>
+    <h3><b>STOMP THAT</b></h3>
+    <h5><b>1:00 PM  Sambhram</b></h5>
+    </center><br>
+    
+    </div></td>
+        <td><div class="div" onclick="toggle57()"><center><img src="img/mascara2.jpg" width=30% height=50%><br>
+    <h3><b>MASCARA</b></h3>
+    <h5><b>2:00 PM  Shambavi</b></h5>
+            </center><br></div></td></tr>
+    
+    <tr><td><div class="div" onclick="toggle50()"><center><img src="img/ssh2.jpg" width=40% height=43.7%><br>
+    <h3><b>KHAAMOSHH!!</b></h3>
+    <h5><b>3:00 PM  LH 502,503</b></h5>
+        <h6><b>Round 2</b></h6>
+        </center><br></div></td>
+         
+         <td><div class="div" onclick="toggle58()"><center><img src="img/fashion.png" width=40% height=100%><br>
+    <h3><b>COUTURE</b></h3>
+    <h5><b>4:00 PM  Sadananda</b></h5>
+        </center><br></div></td></tr>
+    </table>
+
+</div>
+ 
+    <style>
+        
+         .popup{
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:300px;
+        padding:20px;
+        background-color: black;
+        visibility: hidden;
+        opacity:0;
+        transition: 0.5s;
+        border-radius: 9px;
+        border-color: aqua;
+    }
+    #quizpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+        #quizpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #quizpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #mockpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #mockpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #mockpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #roadpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #roadpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #roadpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+     #robopopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #robopopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+        }
+    #riffpopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+        }
+    #monpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #monpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #monpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #bripopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #bripopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #bripopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #kalpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #kalpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #kalpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+     #techpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #techpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #techpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #burnpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #burnpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #burnpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #bhapopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #elecpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #elecpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #elecpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #hogpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #hogpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #shutpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #shutpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #shutpopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #provepopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #provepopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #provepopup3.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #duetpopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #battlepopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #vibepopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #talentpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #talentpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #codepopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #codepopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #masterpopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #masterpopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #khampopup1.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+         
+    #khampopup2.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #davincipopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #ampopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #vocalpopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #intelpopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #slowpopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #stomppopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #mascarapopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    #couturepopup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+    }
+    
+        .heading1{
+            color: aqua;
+            text-align: center;
+            font-size:28px;
+            font-weight: 400;
+        }
+        .paragraph1{
+            color: white;
+            font-size: 18px;
+        }
+        .close1{
+            color:aqua;
+            float:right;
+            background-color:black;
+        }
+        
+    
+    </style>
+<div id="quizpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle1()">
+    <h2 class="heading1">QUIZ</h2>
+    <p class="paragraph1">Exhaust the memory spaces in your brain cells with the must-knowns,such that even Wikipedia seems a tiny drop of water in the vast ocean of knowledge.<br>Maximum of three in a team.</p>
+    
+</div>
+<div id="quizpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle2()">
+    <h2 class="heading1">QUIZ</h2>
+    <p class="paragraph1">Exhaust the memory spaces in your brain cells with the must-knowns,such that even Wikipedia seems a tiny drop of water in the vast ocean of knowledge.<br>Maximum of three in a team.</p>
+    
+</div>
+<div id="quizpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle3()">
+    <h2 class="heading1">QUIZ</h2>
+    <p class="paragraph1">Exhaust the memory spaces in your brain cells with the must-knowns,such that even Wikipedia seems a tiny drop of water in the vast ocean of knowledge.<br>Maximum of three in a team.</p>
+    
+</div>
+
+
+    
+<div id="mockpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle4()">
+    <h2 class="heading1">MOCK PRESS</h2>
+    <p class="paragraph1">Who doesn't want to be a celebrity? So be it,your wish is granted.A chance to be in the limelight and answer like a celebrity.<br>Each participant must perform individually.</p>
+    
+</div>
+<div id="mockpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle5()">
+    <h2 class="heading1">MOCK PRESS</h2>
+    <p class="paragraph1">Who doesn't want to be a celebrity? So be it,your wish is granted.A chance to be in the limelight and answer like a celebrity.
+    <br>Each participant must perform individually.</p>
+    
+</div>
+<div id="mockpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle6()">
+    <h2 class="heading1">MOCK PRESS</h2>
+    <p class="paragraph1">Who doesn't want to be a celebrity? So be it,your wish is granted.A chance to be in the limelight and answer like a celebrity.
+    <br>Each participant must perform individually.</p>
+    
+</div>
+<div id="roadpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle7()">
+    <h2 class="heading1">ROADIES</h2>
+    <p class="paragraph1">While a series of tests are thrown at you,try to keep your spirits up and not let your hopes down while everyone pushes you to your breaking point.Overcome this ultimate test to become THE ROADIE.
+    <br>Each participant must perform individually.</p>
+    
+</div>
+<div id="roadpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle8()">
+    <h2 class="heading1">ROADIES</h2>
+    <p class="paragraph1">While a series of tests are thrown at you,try to keep your spirits up and not let your hopes down while everyone pushes you to your breaking point.Overcome this ultimate test to become THE ROADIE.
+    <br>Each participant must perform individually.</p>
+    
+</div>
+<div id="roadpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle9()">
+    <h2 class="heading1">ROADIES</h2>
+    <p class="paragraph1">While a series of tests are thrown at you,try to keep your spirits up and not let your hopes down while everyone pushes you to your breaking point.Overcome this ultimate test to become THE ROADIE.
+    <br>Each participant must perform individually.</p>
+    
+</div>
+<div id="robopopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle10()">
+    <h2 class="heading1">ROBO RACE</h2>
+    <p class="paragraph1">Come let your robots do the running and your skills do the talking in the Robo Race this Incridea.
+    <br>Team limit:4 members.</p>
+    
+</div>
+<div id="robopopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle11()">
+    <h2 class="heading1">ROBO RACE</h2>
+    <p class="paragraph1">Come let your robots do the running and your skills do the talking in the Robo Race this Incridea.
+    <br>Team limit:4 members.</p>
+    
+</div>
+<div id="riffpopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle12()">
+    <h2 class="heading1">RIFF OFF</h2>
+    <p class="paragraph1">A sequence of vocals thrumming to a beat,a chain of songs,and you're in for a melodious treat.Presenting to you Riff-Off an antakshari with a twist.Come sing along because those who wish to sing always find a song.
+    <br>Team limit:2 0r 3 members.</p>
+    
+</div>
+<div id="monpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle13()">
+    <h2 class="heading1">MONEY HEIST</h2>
+    <p class="paragraph1">Get ready to awaken the Einstien within and unravel the mysteries.If you believe that you are capable of deciphering the given enigma,then here's an event that funds you to get to the bottom of these mysteries!<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="monpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle14()">
+    <h2 class="heading1">MONEY HEIST</h2>
+    <p class="paragraph1">Get ready to awaken the Einstien within and unravel the mysteries.If you believe that you are capable of deciphering the given enigma,then here's an event that funds you to get to the bottom of these mysteries!<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="monpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle15()">
+    <h2 class="heading1">MONEY HEIST</h2>
+    <p class="paragraph1">Get ready to awaken the Einstien within and unravel the mysteries.If you believe that you are capable of deciphering the given enigma,then here's an event that funds you to get to the bottom of these mysteries!<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="bripopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle16()">
+    <h2 class="heading1">BRIDGE IT!</h2>
+    <p class="paragraph1">Efforts and hard work construct the bridge that connects your dream to reality.If u think you can build the lightest bridge with the highest structural efficiency,this is the right place to be!<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="bripopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle17()">
+    <h2 class="heading1">BRIDGE IT!</h2>
+    <p class="paragraph1">Efforts and hard work construct the bridge that connects your dream to reality.If u think you can build the lightest bridge with the highest structural efficiency,this is the right place to be!<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="bripopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle18()">
+    <h2 class="heading1">BRIDGE IT!</h2>
+    <p class="paragraph1">Efforts and hard work construct the bridge that connects your dream to reality.If u think you can build the lightest bridge with the highest structural efficiency,this is the right place to be!<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="kalpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle19()">
+    <h2 class="heading1">KALAKAAR</h2>
+    <p class="paragraph1">Anything that can be written or thought of can be filmed.If you know what is supposed to be in the frame and what should be out,Kalakaar is the place to be!<br>Team limit:Maximum of 10 members.</p>
+    
+</div>
+<div id="kalpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle20()">
+    <h2 class="heading1">KALAKAAR</h2>
+    <p class="paragraph1">Anything that can be written or thought of can be filmed.If you know what is supposed to be in the frame and what should be out,Kalakaar is the place to be!<br>Team limit:Maximum of 10 members.</p>
+    
+</div>
+<div id="kalpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle21()">
+    <h2 class="heading1">KALAKAAR</h2>
+    <p class="paragraph1">Anything that can be written or thought of can be filmed.If you know what is supposed to be in the frame and what should be out,Kalakaar is the place to be!<br>Team limit:Maximum of 10 members.</p>
+    
+</div>
+<div id="techpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle22()">
+    <h2 class="heading1">TECH ADS</h2>
+    <p class="paragraph1">Do you see the world around you in vivid colours?Does every ordinary occurance play out differently in your imagination?If yes then Tech Ads will tingle your senses and kick your creativity into gear.<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="techpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle23()">
+    <h2 class="heading1">TECH ADS</h2>
+    <p class="paragraph1">Do you see the world around you in vivid colours?Does every ordinary occurance play out differently in your imagination?If yes then Tech Ads will tingle your senses and kick your creativity into gear.<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="techpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle24()">
+    <h2 class="heading1">TECH ADS</h2>
+    <p class="paragraph1">Do you see the world around you in vivid colours?Does every ordinary occurance play out differently in your imagination?If yes then Tech Ads will tingle your senses and kick your creativity into gear.<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="burnpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle25()">
+    <h2 class="heading1">BURN AND RUN</h2>
+    <p class="paragraph1">Welcome to the world of embedded systems.Are you good at an event circling around burning and running programs using microcontrollers and Arduino?Burn and Run awaits you!<br>Team limit:Team of 2 to 3 members.</p>
+    
+</div>
+<div id="burnpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle26()">
+    <h2 class="heading1">BURN AND RUN</h2>
+    <p class="paragraph1">Welcome to the world of embedded systems.Are you good at an event circling around burning and running programs using microcontrollers and Arduino?Burn and Run awaits you!<br>Team limit:Team of 2 to 3 members.</p>
+    
+</div>
+<div id="burnpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle27()">
+    <h2 class="heading1">BURN AND RUN</h2>
+    <p class="paragraph1">Welcome to the world of embedded systems.Are you good at an event circling around burning and running programs using microcontrollers and Arduino?Burn and Run awaits you!<br>Team limit:Team of 2 to 3 members.</p>
+    
+</div>
+<div id="bhapopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle28()">
+    <h2 class="heading1">BHAJAN</h2>
+    <p class="paragraph1">"I'll be singing hymns to the rafters,be praising his goodness so loud they're going to have to turn down the volume in Heaven."Come entice the audience in the soothing Bhaan competition.<br>Team limit:Team of 5 to 8 members.</p>
+    
+</div>
+<div id="elecpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle29()">
+    <h2 class="heading1">ELECTRICUIT IT</h2>
+    <p class="paragraph1">Are you the regulator for the fluctuations in circuit related problems?If yes,then come Electricuit it!<br>Team limit:Team of 3 members.</p>
+    
+</div>
+<div id="elecpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle30()">
+    <h2 class="heading1">ELECTRICUIT IT</h2>
+    <p class="paragraph1">Are you the regulator for the fluctuations in circuit related problems?If yes,then come Electricuit it!<br>Team limit:Team of 3 members.</p>
+    
+</div>
+<div id="elecpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle31()">
+    <h2 class="heading1">ELECTRICUIT IT</h2>
+    <p class="paragraph1">Are you the regulator for the fluctuations in circuit related problems?If yes,then come Electricuit it!<br>Team limit:Team of 3 members.</p>
+    
+</div>
+<div id="hogpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle32()">
+    <h2 class="heading1">HOGATHON</h2>
+    <p class="paragraph1">Are you a big-time foodie,a glutton who loves to eat it all in one go?For all the food-lovers with apetites bigger then their tummies who love gorging and munching,Incridea'20 presents -Hogathon.A mega food eating competetion to hog it all as fast as you can,let's see "How Big Your Appetite is?"<br>Team limit:Individual participants.</p>
+    
+</div>
+<div id="hogpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle33()">
+    <h2 class="heading1">HOGATHON</h2>
+    <p class="paragraph1">Are you a big-time foodie,a glutton who loves to eat it all in one go?For all the food-lovers with apetites bigger then their tummies who love gorging and munching,Incridea'20 presents -Hogathon.A mega food eating competetion to hog it all as fast as you can,let's see "How Big Your Appetite is?"<br>Team limit:Individual participants.</p>
+    
+</div>
+<div id="shutpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle34()">
+    <h2 class="heading1">SHUTTER UP</h2>
+    <p class="paragraph1">You can look into a picture for a week and never think of it for a second.You can also look at a picture for a second and think of it all the time.Shutter up is an event for all the phote enthusiasts to show the world what they see through their mind's eye.Gear up,focus in and click on!<br>Team limit:Team of 2 members.</p>
+    
+</div>
+<div id="shutpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle35()">
+    <h2 class="heading1">SHUTTER UP</h2>
+    <p class="paragraph1">You can look into a picture for a week and never think of it for a second.You can also look at a picture for a second and think of it all the time.Shutter up is an event for all the phote enthusiasts to show the world what they see through their mind's eye.Gear up,focus in and click on!<br>Team limit:Team of 2 members.</p>
+    
+</div>
+<div id="shutpopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle36()">
+    <h2 class="heading1">SHUTTER UP</h2>
+    <p class="paragraph1">You can look into a picture for a week and never think of it for a second.You can also look at a picture for a second and think of it all the time.Shutter up is an event for all the phote enthusiasts to show the world what they see through their mind's eye.Gear up,focus in and click on!<br>Team limit:Team of 2 members.</p>
+    
+</div>
+<div id="provepopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle37()">
+    <h2 class="heading1">PROVE US WRONG</h2>
+    <p class="paragraph1">"I love argument,I love debate.I don't expect anyone to sit there and agree with me,that's not their job."<br>
+    -Margaret Thatcher<br>Do you agree with her?Then come and let your opinions speak louder than your voice in Prove s Wrong.<br>Team limit:Maximum of 2 members.</p>
+    
+</div>
+<div id="provepopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle38()">
+    <h2 class="heading1">PROVE US WRONG</h2>
+    <p class="paragraph1">"I love argument,I love debate.I don't expect anyone to sit there and agree with me,that's not their job."<br>
+    -Margaret Thatcher<br>Do you agree with her?Then come and let your opinions speak louder than your voice in Prove s Wrong.<br>Team limit:Maximum of 2 members.</p>
+    
+</div>
+<div id="provepopup3" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle39()">
+    <h2 class="heading1">PROVE US WRONG</h2>
+    <p class="paragraph1">"I love argument,I love debate.I don't expect anyone to sit there and agree with me,that's not their job."<br>
+    -Margaret Thatcher<br>Do you agree with her?Then come and let your opinions speak louder than your voice in Prove s Wrong.<br>Team limit:Maximum of 2 members.</p>
+    
+</div>
+<div id="duetpopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle40()">
+    <h2 class="heading1">DUET DANCE</h2>
+    <p class="paragraph1">Dance is a great way to express oneself.Dance from your heart and let your passion shine through.If you think you and your partner can create magic and set the stage on fire,then duet it out!<br>Team limit:Team of 2 members.</p>
+    
+</div>
+<div id="battlepopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle41()">
+    <h2 class="heading1">BATTLE OF BANDS</h2>
+    <p class="paragraph1">A golden opportunity awaits all the tremendous bands in Karnataka to win the ultimate showdown-Battle of the Bands.<br>Team limit:Maximum of 8 members.</p>
+    
+</div>
+<div id="vibepopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle42()">
+    <h2 class="heading1">VIBE</h2>
+    <p class="paragraph1">The stage is set,the lights are lit,it's time for all you talented dancers out there to flaunt your best moves and display your individual brilliance.<br>Come dance your heart out and discover the star within you!<br>Team limit:Individual participants.</p>
+    
+</div>
+<div id="talentpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle43()">
+    <h2 class="heading1">TALENT HOUSE</h2>
+    <p class="paragraph1">Talent is truth on display.Presenting to you,Talent House, a platform to showcase absolutely any talent ranging from singing,dancing,comedy and novelty acts.Here's a chance for you to bring out your hidden 'x' quotient on-stage that is going to leave the audience in awe!<br>Team limit:Can participate individually or form a team.</p>
+    
+</div>
+<div id="talentpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle44()">
+    <h2 class="heading1">TALENT HOUSE</h2>
+    <p class="paragraph1">Talent is truth on display.Presenting to you,Talent House, a platform to showcase absolutely any talent ranging from singing,dancing,comedy and novelty acts.Here's a chance for you to bring out your hidden 'x' quotient on-stage that is going to leave the audience in awe!<br>Team limit:Can participate individually or form a team.</p>
+    
+</div>
+<div id="codepopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle45()">
+    <h2 class="heading1">CODE STUDIO</h2>
+    <p class="paragraph1">Do you have an aptitude for coding?Then 'Code studio' is perfectly suited to test your skills.Consider of two rounds,put your team to ultimate test.<br>Team limit:Maximum of 2 members.</p>
+    
+</div>
+<div id="codepopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle46()">
+    <h2 class="heading1">CODE STUDIO</h2>
+    <p class="paragraph1">Do you have an aptitude for coding?Then 'Code studio' is perfectly suited to test your skills.Consider of two rounds,put your team to ultimate test.<br>Team limit:Maximum of 2 members.</p>
+    
+</div>
+<div id="masterpopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle47()">
+    <h2 class="heading1">MASTER CHEF</h2>
+    <p class="paragraph1">We're all foodies,food drives us mad.Be our chef,we'll be glad.<br>Bring soul to your recipes ust like the crunch of a potato chrisp,mixed in a mess of ketchup.We present to you MASTERCHEF!<br>Team limit:Maximum of 2 members.</p>
+    
+</div>
+<div id="masterpopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle48()">
+    <h2 class="heading1">MASTER CHEF</h2>
+    <p class="paragraph1">We're all foodies,food drives us mad.Be our chef,we'll be glad.<br>Bring soul to your recipes ust like the crunch of a potato chrisp,mixed in a mess of ketchup.We present to you MASTERCHEF!<br>Team limit:Maximum of 2 members.</p>
+    
+</div>
+<div id="khampopup1" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle49()">
+    <h2 class="heading1">KHAAMOSHH!</h2>
+    <p class="paragraph1">Do you have what it takes to express yourself without saying a word?<br>Then 'Act it out' is the perfect event for you to show your enacting skills.Come put your team of three to the ultimate test.<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="khampopup2" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle50()">
+    <h2 class="heading1">KHAAMOSHH!</h2>
+    <p class="paragraph1">Do you have what it takes to express yourself without saying a word?<br>Then 'Act it out' is the perfect event for you to show your enacting skills.Come put your team of three to the ultimate test.<br>Team limit:Maximum of 3 members.</p>
+    
+</div>
+<div id="davincipopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle51()">
+    <h2 class="heading1">DAVINCI</h2>
+    <p class="paragraph1">"The artist sees what others catch only a glimpse of",said great Da Vinci.Come,bring your strokes alive on the canvas to create a masterpiece!<br>Team limit:Individual participants.</p>
+    
+</div>
+<div id="ampopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle52()">
+    <h2 class="heading1">JAM</h2>
+    <p class="paragraph1">If you are second to none when it comes to speaking non-stop,and doing so under the watchful gaze of your opponents is a piece of cake for you,here is an event for you.Just a minute(JAM) is an event where you get to flaunt your communication skills to the maximum.<br>Team limit:Individual participation.</p>
+    
+</div>
+<div id="vocalpopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle53()">
+    <h2 class="heading1">VOCAL TWIST</h2>
+    <p class="paragraph1">Can you mesmerize those who listen to you?Do you have what it takes to move the hearts of the masses with your voice?Then it is time to bring out your inner Nightingale.<br>Team limit:Individual participation.</p>
+    
+</div>
+<div id="intelpopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle54()">
+    <h2 class="heading1">INTELECTIUM</h2>
+    <p class="paragraph1">"To expect the unexpected shows thoroughly a modern intellect"<br>Do you love writing research papers and presenting them nonchantly?Intellectium is open now!<br>Team limit:3 members.</p>
+    
+</div>
+<div id="slowpopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle55()">
+    <h2 class="heading1">SLOW BIKE RACE</h2>
+    <p class="paragraph1">"It's your road.Others can ride it with you,not for you".For all the bike enthusiasts,we present to you the Slow Bike Race,where for once,coming last is in your favour.<br>Team limit:Individual participants.</p>
+    
+</div>
+<div id="stomppopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle56()">
+    <h2 class="heading1">STOMP THAT</h2>
+    <p class="paragraph1">There is nothing more calming then watcing a fluid choreography of people dancing in unison.So get your groups ready to stomp that stage with uniqueness and talent!<br>Team limit:Individual participation.</p>
+    
+</div>
+<div id="mascarapopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle57()">
+    <h2 class="heading1">MASCARA</h2>
+    <p class="paragraph1">In this age of filters and lenses where augmented reality has made changing our looks as simple as tapping a button.Mascara takes a step back to the drawing board.In other words,grab a person and a paint brush and head over to this face painting competetion.<br>Team limit:2 members.</p>
+    
+</div>
+<div id="couturepopup" class="popup">
+    <input type="button" value="X" class="close1" onclick="toggle58()">
+    <h2 class="heading1">COUTURE</h2>
+    <p class="paragraph1">Ever wondered what it might feel like to walk in Adriana Lima's shoes?Fire up the ramp with your aura and confidence in this battle of beauty and style with panache.<br>Team limit:12+4.</p>
+    
+</div>
+
+ <script type="text/javascript" src="js/index1.js"></script>   
+    <script type="text/javascript" src="js/index2.js"></script> 
+    
+</body></html>
